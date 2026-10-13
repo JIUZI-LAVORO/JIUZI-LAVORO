@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="The personal academic website of Ziqi Liu (刘子琦), a doctoral student in algebraic geometry at the University of Milan." />
+  <title>Ziqi Liu 刘子琦 | Academic Homepage</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #202a35;
+      --muted: #5d6b79;
+      --blue: #185c8e;
+      --line: #dce4e9;
+      --bg: #fbfcfd;
+      --surface: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--bg);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, "Noto Sans", sans-serif;
+      line-height: 1.78;
+      font-size: 16px;
+    }
+    a { color: var(--blue); text-decoration: underline; text-underline-offset: 3px; }
+    a:hover { color: #0a3b64; }
+    a:focus-visible { outline: 3px solid #88b5d7; outline-offset: 3px; }
+    .skip { position: absolute; left: -9999px; }
+    .skip:focus { top: 12px; left: 12px; z-index: 10; background: #fff; padding: 6px 10px; }
+    .site-header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--line);
+    }
+    .header-inner {
+      max-width: 940px;
+      margin: 0 auto;
+      padding: 26px 28px 25px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .site-title {
+      font-size: 1.45rem;
+      font-weight: 680;
+      letter-spacing: 0.02em;
+      text-decoration: none;
+      color: var(--ink);
+      line-height: 1.35;
+    }
+    nav { display: flex; gap: 23px; flex-wrap: wrap; }
+    nav a { text-decoration: none; color: var(--muted); font-size: 0.94rem; }
+    nav a:hover { color: var(--blue); }
+    main {
+      max-width: 940px;
+      padding: 63px 28px 82px;
+      margin: 0 auto;
+    }
+    .eyebrow {
+      margin: 0 0 10px;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 0.77rem;
+      letter-spacing: 0.13em;
+      color: var(--blue);
+    }
+    h1 {
+      margin: 0 0 19px;
+      font-family: Georgia, "Noto Serif", "Times New Roman", serif;
+      font-weight: 500;
+      font-size: clamp(2.25rem, 5vw, 3.4rem);
+      letter-spacing: -0.025em;
+      line-height: 1.2;
+    }
+    h2 {
+      margin: 0 0 15px;
+      font-family: Georgia, "Noto Serif", "Times New Roman", serif;
+      font-size: 1.55rem;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+    }
+    .intro { font-size: 1.14rem; max-width: 770px; color: #3f4b58; }
+    p { margin: 0 0 17px; }
+    section { max-width: 770px; }
+    .section-block { padding-top: 42px; margin-top: 35px; border-top: 1px solid var(--line); }
+    .contact { font-size: 1.02rem; }
+    .site-footer { border-top: 1px solid var(--line); background: var(--surface); }
+    .footer-inner { max-width: 940px; margin: 0 auto; padding: 22px 28px; font-size: 0.85rem; color: var(--muted); }
+    .footer-inner p { margin-bottom: 5px; }
+    @media (max-width: 620px) {
+      .header-inner { align-items: flex-start; padding: 20px 20px; }
+      nav { gap: 15px; }
+      main { padding: 46px 20px 65px; }
+      .section-block { padding-top: 30px; margin-top: 29px; }
+      .footer-inner { padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-title" href="#top">ZIQI LIU 刘子琦</a>
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="top" aria-labelledby="page-title">
+      <p class="eyebrow">Personal academic website</p>
+      <h1 id="page-title">Ziqi Liu <span lang="zh">刘子琦</span></h1>
+      <p class="intro">My name is Ziqi Liu (CN: 刘子琦). This is my personal academic website.</p>
+      <!-- OPTIONAL PROFILE PHOTO:
+           1. Put a photo you own at assets/profile.jpg.
+           2. Uncomment this image tag:
+           <img src="assets/profile.jpg" alt="Portrait of Ziqi Liu" width="220" loading="lazy">
+           3. Add CSS styling as preferred.
+      -->
+    </section>
+
+    <section id="about" class="section-block" aria-labelledby="about-title">
+      <h2 id="about-title">About</h2>
+      <p>
+        I am a doctoral student at Università degli Studi di Milano and my advisors are
+        <a href="https://sites.unimi.it/pertusi/">Laura Pertusi</a> and
+        <a href="https://sites.unimi.it/stellari/">Paolo Stellari</a>.
+        I belong to the <a href="https://sites.unimi.it/geoalg/">Complex Algebraic Geometry Group</a>.
+        I am partly supported by the FIS grant
+        <a href="https://sites.google.com/view/fis3-pertusi/team-members">SCoNVAG</a>.
+      </p>
+    </section>
+
+    <section id="research" class="section-block" aria-labelledby="research-title">
+      <h2 id="research-title">Research</h2>
+      <p>I work on algebraic geometry and the associated homological structures.</p>
+    </section>
+
+    <section id="education" class="section-block" aria-labelledby="education-title">
+      <h2 id="education-title">Education</h2>
+      <p>
+        I was a master student at Rheinische Friedrich-Wilhelms-Universität Bonn and
+        wrote my master thesis under the supervision of
+        <a href="https://www.math.uni-bonn.de/~huybrech/">Daniel Huybrechts</a> in 2023.
+      </p>
+      <p>
+        I was an undergraduate student at Jilin University in Changchun and wrote my
+        bachelor thesis under the supervision of Xiaosong Sun in 2020.
+      </p>
+    </section>
+
+    <section id="contact" class="section-block" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact</h2>
+      <p class="contact">Email: ziqi [dot] liu [at] unimi [dot] it</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>Copyright &copy; Ziqi Liu. All Rights Reserved.</p>
+      <p>All the photos displayed on this website are owned by Ziqi Liu.</p>
+    </div>
+  </footer>
+</body>
+</html>
